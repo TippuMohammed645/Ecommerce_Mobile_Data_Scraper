@@ -46,10 +46,8 @@ This project acknowledges the valuable contributions of open-source technologies
 Feel free to explore, contribute, and enhance your understanding of the mobile market with the Flipkart Mobile Scraper! 🚀📱
 
 Sample DataFrame👇👇
-<<<<<<< HEAD
 
-=======
-![Screenshot_10-2-2024_23730_localhost](https://github.com/TippuMohammed645/Ecommerce_Mobile_Data_Scraper/assets/154886104/bc3883f9-44de-49bf-a5bf-91f809adc9e1)
->>>>>>> 2246bc3841d44a9047f5622903fb24134b8ba7c5
+"C:\Users\Tippu\Downloads\Screenshot_10-2-2024_23730_localhost.jpeg"
 
-Note : Loading time will take a bit longer for some roles to scrap large number of records so it been limited 200 records, but it will definitely returns the result as you expect even for the large number of records.
+
+Note : Loading time will take a bit longer for some roles to scrap large number of records, but it will definitely returns the result as you expect even for the large number of records.
