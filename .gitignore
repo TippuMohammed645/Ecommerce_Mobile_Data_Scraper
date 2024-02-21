@@ -1,0 +1,10 @@
+trails/
+<<<<<<< HEAD
+venv2/
+=======
+venv/
+>>>>>>> 2246bc3841d44a9047f5622903fb24134b8ba7c5
+*.log
+.vscode/
+
+
