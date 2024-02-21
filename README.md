@@ -47,7 +47,7 @@ Feel free to explore, contribute, and enhance your understanding of the mobile m
 
 Sample DataFrame👇👇
 
-"C:\Users\Tippu\Downloads\Screenshot_10-2-2024_23730_localhost.jpeg"
+
 
 
 Note : Loading time will take a bit longer for some roles to scrap large number of records, but it will definitely returns the result as you expect even for the large number of records.

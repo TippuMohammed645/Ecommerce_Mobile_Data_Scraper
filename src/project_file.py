@@ -1,14 +1,8 @@
 import requests
 from bs4 import BeautifulSoup as bs 
 import pandas as pd
-import time
 import html
 import numpy as np
-<<<<<<< HEAD
-import time
-=======
-
->>>>>>> 2246bc3841d44a9047f5622903fb24134b8ba7c5
 from urllib.parse import urljoin
 import logging
 import streamlit as st
@@ -111,7 +105,7 @@ class ProductDetails:
 
 
     def extract_product_details(self):
-        for i, v1 in enumerate(self.product_links[:200]):
+        for i, v1 in enumerate(self.product_links[:400]):
             self.highlight_data = {}
             self.r1 = self.process_1a(v1)
           
@@ -169,19 +163,13 @@ class ProductDetails:
 def page1():
     """This function returns Data files containing .csv,.json files from Webscraping package"""
     st.title("ECOMMERCE MOBILE DATA SCRAPER")
-<<<<<<< HEAD
     link_data_list=None
+    product_name=''
     product_name = st.text_input("Provide an product name to scrape")
     
     if st.button("Fetch Data"):
         with st.spinner("Please wait.Scraper might take a moment......."):
-=======
-    link_data_list = None
-    product_name = st.text_input("Provide a product name to scrape")
-    
-    if st.button("Fetch Data"):
-        with st.spinner("Please wait. Scraper might take a moment......."):
->>>>>>> 2246bc3841d44a9047f5622903fb24134b8ba7c5
+            
             ft = FetchElectronicDetails(product_name)
             link_data_list = ft.all_product_links()
 
@@ -193,14 +181,8 @@ def page1():
         st.dataframe(result)
         
         # Create download buttons for CSV and JSON files
-<<<<<<< HEAD
         st.download_button('Download Csv file',result.to_csv(),file_name=f"{product_name}.csv")
         st.download_button('Download Json file',result.to_json(),file_name=f"{product_name}.json")
-=======
-        #st.download_button('Download Csv file', result.to_csv(), file_name=f"{product_name}.csv")
-        #st.download_button('Download Json file', result.to_json(), file_name=f"{product_name}.json")
-
->>>>>>> 2246bc3841d44a9047f5622903fb24134b8ba7c5
         
 
 def main():
