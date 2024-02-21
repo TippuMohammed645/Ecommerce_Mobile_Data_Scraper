@@ -131,7 +131,8 @@ class ProductDetails:
                             'Actual Price': self.actual_price,
                             'Offer Price': self.offer_price,
                             'NRating': self.Rating,
-                            'NReviews': self.Reviews
+                            'NReviews': self.Reviews,
+                            'Product_url' : v1
                         }
 
                         self.product_descriptions.append(self.product_description)
@@ -149,11 +150,12 @@ class ProductDetails:
 
     def result1(self):
         try:
-            data1, data2 = self.extract_product_details()
+            data1, data2= self.extract_product_details()
             self.df = pd.DataFrame(data1)
             self.highlight_data = pd.DataFrame(data2)
             self.resulted = pd.concat([self.df, self.highlight_data], axis=1, ignore_index=True)
-            self.resulted.columns=['Model name', 'Actual Price','Offer Price','NRating','NReviews','RAM&STORAGE','DISPLAY','CAMERA','BATTERY','PROCESSOR','Additional_info']
+            self.resulted.columns=['Model name','Actual Price','Offer Price','NRating','NReviews','Product_url','RAM&STORAGE','DISPLAY','CAMERA','BATTERY','PROCESSOR','Additional_info']
+            self.resulted = self.resulted['Model name','Actual Price','Offer Price','NRating','NReviews','RAM&STORAGE','DISPLAY','CAMERA','BATTERY','PROCESSOR','Additional_info','Product_url']
         except Exception as e:
             logging.debug("unable to fetch result: %s",str(e))
             
